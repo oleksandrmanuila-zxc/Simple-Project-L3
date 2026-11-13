@@ -260,3 +260,26 @@ footer {
 		grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
 	}
 }
+#galerie {
+    padding: 2rem;
+}
+
+.galerie-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.galerie-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Responsive: o singură coloană sub 600px */
+@media (max-width: 600px) {
+    .galerie-grid {
+        grid-template-columns: 1fr;
+    }
+}
